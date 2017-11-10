@@ -98,7 +98,7 @@ namespace NCKU_api2
                 {
                     var response = await httpClient.PostAsync(url, encodedContent);
 
-                    if (response.StatusCode == HttpStatusCode.OK)
+                    if (response.StatusCode == HttpStatusCode.OK) 
                     {
                         // Do something with response. Example get content:
                         string content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
